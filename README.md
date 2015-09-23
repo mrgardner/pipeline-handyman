@@ -20,7 +20,7 @@ _jenkins_: `TODO`
 
 ## Usage
 ```javascript
-var gulp = require('gulp');
+
 require('./node_modules/pipeline-handyman/src/index.js');
 
 ```
@@ -44,7 +44,7 @@ __log__
 This functions provides a way to log messages in the terminal. You can get feedback from the gulp process on your terminal trough personalized messages.
 ```javascript
 var gulp = require('gulp');
-var handyman = require('./node_modules/pipeline-handyman/src/index.js')(gulp);
+var handyman = require('./node_modules/pipeline-handyman/src/index.js');
 
 handyman.log('Your message');
 ```
