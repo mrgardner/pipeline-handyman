@@ -46,6 +46,6 @@
     "gulp": "3.9.0",
     "gulp-load-plugins": "0.10.0",
     "lodash": "3.10.1",
-    "pipeline-validate-js": "git+ssh://git@github.com/kenzanmedia/pipeline-validate-js.git#a13d5461af60e5504485268b55c9f9a1d4928c68"
+    "pipeline-validate-js": "git+ssh://git@github.com/kenzanmedia/pipeline-validate-js.git#bug/KEY-28-linter-configurations"
   }
 }
