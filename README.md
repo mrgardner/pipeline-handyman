@@ -56,6 +56,7 @@ handyman.log('Your message');
 | ------------- |:-------------:|
 |gulp| https://www.npmjs.com/package/gulp |
 |gulp-load-plugins| https://www.npmjs.com/package/gulp-load-plugins |
+|gulp-util| https://www.npmjs.com/package/gulp-util |
 |lodash| https://www.npmjs.com/package/lodash |
 
 ## devDependencies
