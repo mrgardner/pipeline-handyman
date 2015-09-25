@@ -21,7 +21,7 @@ _jenkins_: `TODO`
 ## Usage
 ```javascript
 
-require('./node_modules/pipeline-handyman/src/index.js');
+require('pipeline-handyman');
 
 ```
 
@@ -34,7 +34,7 @@ __updateConf__
 This function facilitates the process of merging two arrays. It is widely use to update the configuration in the pipelines.
 
 ```javascript
-var handyman = require('./node_modules/pipeline-handyman/src/index.js');
+var handyman = require('pipeline-handyman');
 
 pipelineConfig = handyman.updateConf(defaultConfig, newConfig);
 
@@ -44,7 +44,7 @@ __log__
 This functions provides a way to log messages in the terminal. You can get feedback from the gulp process on your terminal trough personalized messages.
 ```javascript
 var gulp = require('gulp');
-var handyman = require('./node_modules/pipeline-handyman/src/index.js');
+var handyman = require('pipeline-handyman');
 
 handyman.log('Your message');
 ```
