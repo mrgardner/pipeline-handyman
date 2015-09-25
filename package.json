@@ -19,7 +19,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kenzanmedia/pipeline-handyman.git"
+    "url": "ssh://git@github.com:kenzanmedia/pipeline-handyman.git"
   },
   "keywords": [
     "Gulp",
@@ -47,6 +47,6 @@
     "gulp-load-plugins": "0.10.0",
     "gulp-util": "3.0.6",
     "lodash": "3.10.1",
-    "pipeline-validate-js": "git@github.com/kenzanmedia/pipeline-validate-js.git#22095e89d0b5a4a8d7b63a6c3978ffc0e8a2238c"
+    "pipeline-validate-js": "git+ssh://git@github.com/kenzanmedia/pipeline-validate-js.git#22095e89d0b5a4a8d7b63a6c3978ffc0e8a2238c"
   }
 }
