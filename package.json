@@ -19,7 +19,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:kenzanmedia/pipeline-handyman.git"
+    "url": "git@github.com:kenzanmedia/pipeline-handyman.git"
   },
   "keywords": [
     "Gulp",
