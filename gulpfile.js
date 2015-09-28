@@ -1,8 +1,21 @@
 'use strict';
 
 var gulp = require('gulp');
-require('pipeline-validate-js')(gulp);
+var validatePipeline = require('pipeline-validate-js')();
+var testPipeline = require('pipeline-test-node')();
 require('./src/index.js');
 
-// TODO Update tasks after improving validate-js and test-node.
-gulp.task('default', ['pipelineValidateJS']);
+var config = {
+  files: [
+   'src/**/*.js',
+   'test/**/*.js'
+  ]
+};
+
+
+gulp.task('default', function(){
+  gulp
+    .src(config.files)
+    .pipe(validatePipeline.validateJS())
+    .pipe(testPipeline.test());
+});

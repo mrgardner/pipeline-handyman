@@ -41,7 +41,7 @@ pipelineConfig = handyman.updateConf(defaultConfig, newConfig);
 ```
 __log__
 
-This functions provides a way to log messages in the terminal. You can get feedback from the gulp process on your terminal trough personalized messages.
+This functions provides a way to log messages in the terminal. You can get feedback from the gulp process on your terminal through personalized messages.
 ```javascript
 var gulp = require('gulp');
 var handyman = require('pipeline-handyman');

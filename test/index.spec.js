@@ -1,3 +1,6 @@
+/* jshint expr: true */
+/* exported should */
+
 'use strict';
 
 var handyman = require('../');
