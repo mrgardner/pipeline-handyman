@@ -13,10 +13,10 @@ Gulp Pipeline that provides several tools to facilitate the creation of other pi
 
 _repo_: `ssh://git@github.com:kenzanmedia/pipeline-handyman.git`
 
-_jenkins_: `TODO`
+_jenkins_: `https://kenzan.ci.cloudbees.com/job/CI-pipeline-handyman/`
 
 ## Install
-`TODO`
+`npm install git+ssh://git@github.com/kenzanmedia/pipeline-handyman.git`
 
 ## Usage
 ```javascript
@@ -49,22 +49,6 @@ var handyman = require('pipeline-handyman');
 handyman.log('Your message');
 ```
 
-
-## Dependencies
-
-| Package       | npm link   |
-| ------------- |:-------------:|
-|gulp| https://www.npmjs.com/package/gulp |
-|gulp-load-plugins| https://www.npmjs.com/package/gulp-load-plugins |
-|gulp-util| https://www.npmjs.com/package/gulp-util |
-|lodash| https://www.npmjs.com/package/lodash |
-
-## devDependencies
-
-| Package       | npm link   |
-| ------------- |:-------------:|
-|chai| https://www.npmjs.com/package/chai |
-|mocha| https://www.npmjs.com/package/mocha |
 
 
 ## LICENSE
