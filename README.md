@@ -49,6 +49,15 @@ var handyman = require('pipeline-handyman');
 handyman.log('Your message');
 ```
 
+__getPackageName__
+
+This functions allows you to obtain the package name. You can get feedback from the gulp process on your terminal through personalized messages.
+```javascript
+var gulp = require('gulp');
+var handyman = require('pipeline-handyman');
+
+handyman.getPackageName();
+```
 
 
 ## LICENSE
