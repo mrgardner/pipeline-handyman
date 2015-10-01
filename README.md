@@ -51,7 +51,7 @@ handyman.log('Your message');
 
 __getPackageName__
 
-This functions allows you to obtain the package name. You can get feedback from the gulp process on your terminal through personalized messages.
+This functions allows you to obtain the package name. This can be useful, for example, during minification processes when you need to name the build packages.
 ```javascript
 var gulp = require('gulp');
 var handyman = require('pipeline-handyman');
