@@ -19,17 +19,8 @@ _jenkins_: `https://kenzan.ci.cloudbees.com/job/CI-pipeline-handyman/`
 `npm install git+ssh://git@github.com/kenzanmedia/pipeline-handyman.git`
 
 ## Usage
-```javascript
 
-require('pipeline-handyman');
-
-```
-
-## Results
-
-This pipeline generate the following functions.
-
-__updateConf__
+### updateConf
 
 This function facilitates the process of merging two arrays. It is widely use to update the configuration in the pipelines.
 
@@ -39,9 +30,11 @@ var handyman = require('pipeline-handyman');
 pipelineConfig = handyman.updateConf(defaultConfig, newConfig);
 
 ```
-__log__
+
+### log
 
 This functions provides a way to log messages in the terminal. You can get feedback from the gulp process on your terminal through personalized messages.
+
 ```javascript
 var gulp = require('gulp');
 var handyman = require('pipeline-handyman');
@@ -49,6 +42,16 @@ var handyman = require('pipeline-handyman');
 handyman.log('Your message');
 ```
 
+### getPackageName
+
+This functions allows you to obtain the package name. This can be useful, for example, during minification processes when you need to name the build packages.
+
+```javascript
+var gulp = require('gulp');
+var handyman = require('pipeline-handyman');
+
+handyman.getPackageName();
+```
 
 
 ## LICENSE

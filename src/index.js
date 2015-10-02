@@ -1,12 +1,15 @@
+/* global require, module */
 'use strict';
 
 var _ = require('lodash');
 var plugins = require('gulp-load-plugins')({lazy: true});
+var fs = require('fs');
 
 module.exports = {
 
   updateConf: updateConfiguration,
-  log: log
+  log: log,
+  getPackageName: getPackageName
 };
 
 function updateConfiguration(config, newConfig) {
@@ -29,4 +32,9 @@ function log(msg) {
   } else {
     plugins.util.log(plugins.util.colors.blue(msg));
   }
+}
+
+function getPackageName() {
+  var packageJson = JSON.parse(fs.readFileSync('./package.json'));
+  return packageJson.name;
 }

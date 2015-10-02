@@ -5,6 +5,7 @@
 
 var handyman = require('../');
 var should = require('chai').should();
+var packageName = require('../package.json').name;
 
 describe('gulp-handyman', function () {
 
@@ -36,6 +37,17 @@ describe('gulp-handyman', function () {
       updatedConf.key1.should.equal('userKey');
       updatedConf.key2.should.be.true;
       updatedConf.key3.should.eql(['A2', 'A1']);
+    });
+
+  });
+
+  describe('Get package name', function () {
+
+    it('Should get package name from package.json', function () {
+
+      var handyPackageName = handyman.getPackageName();
+
+      handyPackageName.should.equal(packageName);
     });
 
   });
