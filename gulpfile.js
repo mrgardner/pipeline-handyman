@@ -3,7 +3,6 @@
 var gulp = require('gulp');
 var validatePipeline = require('pipeline-validate-js')();
 var testPipeline = require('pipeline-test-node')();
-var p = require('./src/index.js');
 
 var config = {
   files: [
@@ -12,7 +11,6 @@ var config = {
   ]
 };
 
-console.log(p.getPackageName());
 gulp.task('default', function(){
   gulp
     .src(config.files)
