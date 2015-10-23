@@ -1,4 +1,4 @@
-## Pipeline-handyman
+## pipeline-handyman
 
 
 ## Information
@@ -11,7 +11,7 @@
 
 Gulp Pipeline that provides several tools to facilitate the creation of other pipelines.
 
-_repo_: `ssh://git@github.com:kenzanmedia/pipeline-handyman.git`
+_repo_: `https://github.com/kenzanmedia/pipeline-handyman/`
 
 _jenkins_: `https://kenzan.ci.cloudbees.com/job/CI-pipeline-handyman/`
 
@@ -20,14 +20,15 @@ _jenkins_: `https://kenzan.ci.cloudbees.com/job/CI-pipeline-handyman/`
 
 ## Usage
 
-### updateConf
+### mergeConfig
 
-This function facilitates the process of merging two arrays. It is widely use to update the configuration in the pipelines.
+This function facilitates the process of merging two config objects. It is widely use to take the configuration from the 
+user provided one and merge it with default configuration establish by the pipeline.
 
 ```javascript
 var handyman = require('pipeline-handyman');
 
-pipelineConfig = handyman.updateConf(defaultConfig, newConfig);
+pipelineConfig = handyman.mergeConfig(defaultConfig, newConfig);
 
 ```
 
