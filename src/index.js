@@ -2,17 +2,17 @@
 'use strict';
 
 var _ = require('lodash');
-var plugins = require('gulp-load-plugins')({lazy: true});
 var fs = require('fs');
+var util = require('gulp-util');
 
 module.exports = {
 
-  updateConf: updateConfiguration,
+  mergeConf: mergeConf,
   log: log,
   getPackageName: getPackageName
 };
 
-function updateConfiguration(config, newConfig) {
+function mergeConf(config, newConfig) {
   return _.merge({}, config, newConfig, replaceArrays);
 }
 
@@ -26,11 +26,11 @@ function log(msg) {
   if (typeof(msg) === 'object') {
     for (var item in msg) {
       if (msg.hasOwnProperty(item)) {
-        plugins.util.log(plugins.util.colors.blue(msg[item]));
+        util.log(util.colors.blue(msg[item]));
       }
     }
   } else {
-    plugins.util.log(plugins.util.colors.blue(msg));
+    util.log(util.colors.blue(msg));
   }
 }
 
