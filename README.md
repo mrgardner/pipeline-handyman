@@ -13,7 +13,7 @@ Gulp pipeline that provides several utility methods to facilitate the creation o
 
 ## Install
 
-`npm install git://github.com:kenzanlabs/pipeline-handyman.git --save-dev`
+`npm install git://github.com/kenzanlabs/pipeline-handyman.git --save-dev`
 
 ## Usage
 
