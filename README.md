@@ -9,14 +9,11 @@
 
 # Overview
 
-Gulp Pipeline that provides several tools to facilitate the creation of other pipelines.
-
-_repo_: `https://github.com/kenzanmedia/pipeline-handyman/`
-
-_jenkins_: `https://kenzan.ci.cloudbees.com/job/CI-pipeline-handyman/`
+Gulp pipeline that provides several utility methods to facilitate the creation of other pipelines.
 
 ## Install
-`npm install git+ssh://git@github.com/kenzanmedia/pipeline-handyman.git`
+
+`npm install git://github.com:kenzanlabs/pipeline-handyman.git --save-dev`
 
 ## Usage
 
