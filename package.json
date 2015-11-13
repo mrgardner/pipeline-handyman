@@ -16,7 +16,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:kenzanmedia/pipeline-handyman.git"
+    "url": "https://github.com/kenzanlabs/pipeline-handyman"
   },
   "keywords": [
     "Gulp",
@@ -40,9 +40,9 @@
     "lodash": "3.10.1"
   },
   "devDependencies": {
-    "chai": "^3.4.0",
-    "pipeline-test-node": "git+ssh://git@github.com/kenzanmedia/pipeline-test-node.git#0.2.0",
-    "pipeline-validate-js": "git+ssh://git@github.com/kenzanmedia/pipeline-validate-js.git#0.1.0",
-    "sinon": "^1.17.2"
+    "chai": "3.4.0",
+    "pipeline-test-node": "git+ssh://git@github.com/kenzanlabs/pipeline-test-node.git#0.2.0",
+    "pipeline-validate-js": "git+ssh://git@github.com/kenzanlabs/pipeline-validate-js.git#0.1.0",
+    "sinon": "1.17.2"
   }
 }
