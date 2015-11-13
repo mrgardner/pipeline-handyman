@@ -41,8 +41,8 @@
   },
   "devDependencies": {
     "chai": "3.4.0",
-    "pipeline-test-node": "git+ssh://git@github.com/kenzanlabs/pipeline-test-node.git#0.2.0",
-    "pipeline-validate-js": "git+ssh://git@github.com/kenzanlabs/pipeline-validate-js.git#0.1.0",
+    "pipeline-test-node": "git+ssh://git@github.com/kenzanlabs/pipeline-test-node.git",
+    "pipeline-validate-js": "git+ssh://git@github.com/kenzanlabs/pipeline-validate-js.git",
     "sinon": "1.17.2"
   }
 }
