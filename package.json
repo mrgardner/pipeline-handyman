@@ -26,7 +26,7 @@
   ],
   "preferGlobal": false,
   "publishConfig": {
-    "registry": ""
+    "registry": "http://registry.npmjs.org/"
   },
   "engines": {
     "node": ">=0.10.3",
