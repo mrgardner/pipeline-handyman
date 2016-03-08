@@ -105,7 +105,6 @@ describe('gulp-handyman', function () {
 
     it('should strip out non-alpha characters', function() {
       input = 'input with & some % special characters';
-      console.log(handyman.slugify(input));
       expect(handyman.slugify(input)).to.equal('input-with-some-special-characters');
     });
 
