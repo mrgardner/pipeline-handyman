@@ -9,7 +9,8 @@ module.exports = {
 
   mergeConf: mergeConf,
   log: log,
-  getPackageName: getPackageName
+  getPackageName: getPackageName,
+  slugify: slugify
 };
 
 function mergeConf(config, newConfig) {
@@ -37,4 +38,10 @@ function log(msg) {
 function getPackageName() {
   var packageJson = JSON.parse(fs.readFileSync('./package.json'));
   return packageJson.name;
+}
+
+function slugify(input) {
+  return input
+    .replace(/(\s*[\W]\s*)\s?/g, '-')
+    .toLowerCase();
 }
