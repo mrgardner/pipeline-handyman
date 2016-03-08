@@ -5,7 +5,7 @@
 
 | Package       | Description   | Version|
 | ------------- |:-------------:| -----:|
-| pipeline-handyman| Pipeline with resources used in several pipes | 0.3.0 |
+| pipeline-handyman| Pipeline with resources used in several pipes | 0.4.0 |
 
 # Overview
 
