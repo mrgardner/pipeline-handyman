@@ -81,33 +81,4 @@ describe('gulp-handyman', function () {
 
   });
 
-  describe('Slugify', function () {
-    var input;
-
-    it('should expose a slugify method', function () {
-      expect(handyman.slugify).to.exist;
-    });
-
-    it('should return the input as is when the input contains special characters', function () {
-      input = 'inputwithoutspecialcharacters';
-      expect(handyman.slugify(input)).to.equal(input);
-    });
-
-    it('should replace all spaces with hyphens', function() {
-      input = 'input with spaces';
-      expect(handyman.slugify(input)).to.equal('input-with-spaces');
-    });
-
-    it('should convert the string to lower case', function () {
-      input = 'input With Capital characters';
-      expect(handyman.slugify(input)).to.equal('input-with-capital-characters');
-    });
-
-    it('should strip out non-alpha characters', function() {
-      input = 'input with & some % special characters';
-      console.log(handyman.slugify(input));
-      expect(handyman.slugify(input)).to.equal('input-with-some-special-characters');
-    });
-
-  });
 });
