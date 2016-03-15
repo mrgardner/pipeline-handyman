@@ -2,12 +2,27 @@
 'use strict';
 
 var expect = require('chai').expect;
+var fs = require('fs');
 var handyman = require('../');
 var packageName = require('../package.json').name;
 var sinon = require('sinon');
 var util = require('gulp-util');
 
 describe('gulp-handyman', function () {
+
+  describe('clean', function () {
+    it('should delete the path passed as a param', function () {
+      // create temp dir for testing
+      var dir = './tmp';
+      fs.mkdirSync(dir);
+
+      // consume method to be tested
+      handyman.clean([dir], null, true);
+
+      // confirm results
+      expect(fs.existsSync(dir)).to.be.false;
+    });
+  });
 
   describe('Update configuration', function () {
     var defaultConfig, providerConfig;
