@@ -12,14 +12,11 @@ describe('gulp-handyman', function () {
 
   describe('clean', function () {
     it('should delete the path passed as a param', function () {
-      // create temp dir for testing
       var dir = './tmp';
-      fs.mkdirSync(dir);
 
-      // consume method to be tested
+      fs.mkdirSync(dir);
       handyman.clean([dir], null, true);
 
-      // confirm results
       expect(fs.existsSync(dir)).to.be.false;
     });
   });
