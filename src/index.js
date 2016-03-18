@@ -7,13 +7,13 @@ var util = require('gulp-util');
 
 module.exports = {
 
-  mergeConf: mergeConf,
+  mergeConfig: mergeConfig,
   log: log,
   getPackageName: getPackageName,
   slugify: slugify
 };
 
-function mergeConf(config, newConfig) {
+function mergeConfig(config, newConfig) {
   return _.merge({}, config, newConfig, replaceArrays);
 }
 
