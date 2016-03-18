@@ -20,6 +20,17 @@ Also, as part of a repo migration, version 0.1.1 will not install, so please use
 
 ## Usage
 
+### clean
+
+This functions provides a way to delete directories synchonrously, by passing an array of globs.
+
+```javascript
+var gulp = require('gulp');
+var handyman = require('pipeline-handyman');
+
+handyman.clean(['.dest/'], doneCallbackFunction);
+```
+
 ### mergeConfig
 
 This function facilitates the process of merging two config objects. It is widely use to take the configuration from the 
