@@ -2,16 +2,21 @@
 'use strict';
 
 var _ = require('lodash');
+var del = require('del');
 var fs = require('fs');
 var util = require('gulp-util');
 
 module.exports = {
-
+  clean: clean,
   mergeConfig: mergeConfig,
   log: log,
   getPackageName: getPackageName,
   slugify: slugify
 };
+
+function clean(path, done) {
+  return del.sync(path, done);
+}
 
 function mergeConfig(config, newConfig) {
   return _.merge({}, config, newConfig, replaceArrays);
