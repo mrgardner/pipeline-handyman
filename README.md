@@ -5,7 +5,7 @@
 
 | Package       | Description   | Version|
 | ------------- |:-------------:| -----:|
-| pipeline-handyman| Pipeline with resources used in several pipes | 0.4.0 |
+| pipeline-handyman| Pipeline with resources used in several pipes | 1.0.0 |
 
 # Overview
 
@@ -14,9 +14,6 @@ Gulp pipeline that provides several utility methods to facilitate the creation o
 ## Install
 
 `npm install pipeline-handyman --save-dev`
-
-**NOTE: as this project is still pre 1.0.0, it is subject to possible backwards incompatible changes as it matures.
-Also, as part of a repo migration, version 0.1.1 will not install, so please use any of the new versions**
 
 ## Usage
 
