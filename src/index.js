@@ -29,8 +29,10 @@ function replaceArrays(a, b) {
 }
 
 function log(msg) {
-  if (typeof(msg) === 'object') {
-    for (var item in msg) {
+  var item;
+
+  if (typeof msg === 'object') {
+    for (item in msg) {
       if (msg.hasOwnProperty(item)) {
         util.log(util.colors.blue(msg[item]));
       }
@@ -42,6 +44,7 @@ function log(msg) {
 
 function getPackageName() {
   var packageJson = JSON.parse(fs.readFileSync('./package.json'));
+
   return packageJson.name;
 }
 
